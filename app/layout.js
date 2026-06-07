@@ -1,4 +1,5 @@
 import clientConfig from "@/client.config";
+import { Analytics } from "@vercel/analytics/next";
 
 const { brand, seo, business } = clientConfig;
 
@@ -100,6 +101,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );
