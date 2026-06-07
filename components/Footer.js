@@ -14,88 +14,97 @@ export default function Footer() {
     <>
       <style>{`
         .footer {
-          background: #111;                    /* ← changed to black */
-          color: rgba(255,255,255,0.75);
-          padding: 56px 0 24px;
-          font-size: 0.9rem;
+          background: #1A1A1A; /* Softer, premium dark gray instead of harsh #111 */
+          color: rgba(255,255,255,0.7);
+          padding: 80px 0 24px; /* Added breathing room at the top */
+          font-size: 0.95rem;
         }
         .footer__grid {
           display: grid;
-          grid-template-columns: 1.5fr 1fr 1fr;
-          gap: 48px;
-          margin-bottom: 40px;
+          grid-template-columns: 2fr 1fr 1.5fr; /* Adjusted column weighting */
+          gap: 64px;
+          margin-bottom: 60px;
         }
         .footer__brand-name {
-          font-size: 1.2rem;
+          font-size: 1.4rem;
           font-weight: 800;
           color: #fff;
-          margin-bottom: 12px;
+          margin-bottom: 16px;
         }
         .footer__brand-name span { color: var(--secondary); }
         .footer__tagline {
-          opacity: 0.6;
-          line-height: 1.6;
-          margin-bottom: 20px;
-          font-size: 0.88rem;
+          opacity: 0.8;
+          line-height: 1.7;
+          margin-bottom: 24px;
+          font-size: 0.95rem;
+          max-width: 350px;
         }
         .footer__heading {
           color: #fff;
           font-weight: 700;
-          font-size: 0.85rem;
-          letter-spacing: 1px;
+          font-size: 0.9rem;
+          letter-spacing: 1.5px;
           text-transform: uppercase;
-          margin-bottom: 16px;
+          margin-bottom: 24px;
         }
         .footer__links { list-style: none; }
-        .footer__links li { margin-bottom: 10px; }
-        .footer__links a { transition: color 0.2s; }
-        .footer__links a:hover { color: var(--secondary); }
+        .footer__links li { margin-bottom: 14px; }
+        .footer__links a { transition: color 0.2s, padding-left 0.2s; }
+        .footer__links a:hover { color: var(--secondary); padding-left: 4px; } /* Tiny nudge on hover */
+        
         .footer__contact-item {
           display: flex;
           align-items: flex-start;
-          gap: 10px;
-          margin-bottom: 12px;
+          gap: 12px;
+          margin-bottom: 16px;
+          line-height: 1.6;
         }
-        .footer__contact-icon { font-size: 1rem; margin-top: 2px; flex-shrink: 0; }
+        .footer__contact-icon { font-size: 1.1rem; flex-shrink: 0; color: var(--secondary); } /* Icons match accent color */
         .footer__email-list {
           display: flex;
-          flex-wrap: wrap;
-          gap: 4px 12px;
+          flex-direction: column;
+          gap: 4px;
         }
         .footer__email-list a {
           word-break: break-all;
-          overflow-wrap: anywhere;
+          transition: color 0.2s;
         }
+        .footer__email-list a:hover { color: var(--secondary); }
         .footer__social {
           display: flex;
           gap: 12px;
-          margin-top: 8px;
+          margin-top: 16px;
         }
         .footer__social a {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 36px;
-          height: 36px;
-          background: rgba(255,255,255,0.08);
+          width: 40px;
+          height: 40px;
+          background: rgba(255,255,255,0.05);
           border-radius: 50%;
-          font-size: 0.85rem;
-          transition: background 0.2s;
+          font-size: 0.95rem;
+          transition: background 0.3s, transform 0.3s;
         }
-        .footer__social a:hover { background: var(--secondary); }
+        .footer__social a:hover { 
+          background: var(--secondary); 
+          color: #fff;
+          transform: translateY(-3px);
+        }
         .footer__bottom {
           border-top: 1px solid rgba(255,255,255,0.08);
-          padding-top: 20px;
+          padding-top: 24px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           flex-wrap: wrap;
-          gap: 8px;
-          font-size: 0.8rem;
-          opacity: 0.5;
+          gap: 16px;
+          font-size: 0.85rem;
+          opacity: 0.6;
         }
         @media (max-width: 768px) {
-          .footer__grid { grid-template-columns: 1fr; gap: 32px; }
+          .footer__grid { grid-template-columns: 1fr; gap: 48px; }
+          .footer { padding: 60px 0 24px; }
         }
       `}</style>
 

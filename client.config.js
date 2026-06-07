@@ -19,7 +19,7 @@ const clientConfig = {
     logoPosition: "left",
     logoWidth: 160,
     primaryColor: "#096028",
-    secondaryColor: "#156730",
+    secondaryColor: "#D4AF37",
     textOnPrimary: "#ffffff",
     lightBg: "#E7EEE7",
     darkBg: "#074A21",
@@ -40,7 +40,7 @@ const clientConfig = {
     heroSubtitle:
       "Professional cleaning, care, and home support across Cape Town and all suburbs. Available 24/7.",
      heroImage: "/images/hero.jpg",          // ✅ set to hero image
-    heroOverlayOpacity: 0.55,               // dark overlay for readability
+    heroOverlayOpacity: 0.75,               // dark overlay for readability
     ctaText: "WhatsApp Us Now",
     ctaLink: "",
 
@@ -94,49 +94,49 @@ const clientConfig = {
         image: "/images/services/home-cleaning.jpg",   // add path like "/images/services/cleaning.jpg" later
       },
       {
-        icon: "👕",
+        icon: null,
         title: "Laundry & Ironing",
         description:
           "Washing, drying, ironing and folding – handled with care so you never have to worry about piles of laundry.",
         image: "/images/services/laundry.jpg",
       },
       {
-        icon: "🍳",
+        icon: null,
         title: "Meal Preparation & Cooking",
         description:
           "Nutritious, tasty meals prepared to your dietary needs and preferences. Enjoy delicious food without the effort.",
         image: "/images/services/meal-prep.jpg",
       },
       {
-        icon: "👴",
+        icon: null,
         title: "Elderly & Companion Care",
         description:
           "Compassionate support and companionship for seniors. We treat your loved ones with dignity and respect.",
         image: "/images/services/elderly.jpg",
       },
       {
-        icon: "👶",
+        icon: null,
         title: "Childcare & Babysitting",
         description:
           "Trustworthy, nurturing childcare for infants and young children. Your little ones are in safe hands.",
         image: "/images/services/childcare.jpg",
       },
       {
-        icon: "🐾",
+        icon: null,
         title: "Pet Walking & Care",
         description:
           "Reliable walks, feeding, and basic pet care. We keep your furry friends happy and active.",
         image: "/images/services/pet-walking.jpg",
       },
       {
-        icon: "🌿",
+        icon: null,
         title: "Gardening & Handyman Services",
         description:
           "Garden maintenance, minor repairs, and general handyman tasks to keep your property in top shape.",
         image: "/images/services/handyman.jpg",
       },
       {
-        icon: "🛒",
+        icon: null,
         title: "Errands & Daily Assistance",
         description:
           "Grocery runs, prescription pick‑ups, and other everyday errands. We free up your time so you can focus on what matters.",
